@@ -216,6 +216,19 @@ const AddJob = () => {
             required
           />
         </div>
+        {/* Application Deadline */}
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Application Deadline</span>
+          </label>
+          <input
+            type="date"
+            name="applicationDeadline"
+            placeholder="Hr name"
+            className="input input-bordered"
+            required
+          />
+        </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
