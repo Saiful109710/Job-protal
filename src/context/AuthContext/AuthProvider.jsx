@@ -2,7 +2,10 @@ import React, { Children, useEffect, useState } from 'react'
 import AuthContext from './AuthContext'
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import auth from '../../firebase/firebase.init';
+<<<<<<< HEAD
 import axios from 'axios';
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
 
 
     const googleProvider = new GoogleAuthProvider()
@@ -40,6 +43,7 @@ const AuthProvider = ({children}) => {
         const unsubscribe = onAuthStateChanged(auth,(currentUser)=>{
             setUser(currentUser);
             console.log('state captured',currentUser)
+<<<<<<< HEAD
 
             if(currentUser?.email){
                 const user1 = {email:currentUser.email}
@@ -60,6 +64,8 @@ const AuthProvider = ({children}) => {
             }
 
             
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
             setLoading(false)
         })
 

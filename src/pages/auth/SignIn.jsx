@@ -4,7 +4,10 @@ import logInLottie from '../../assets/lottie/loginLottie.json'
 import AuthContext from '../../context/AuthContext/AuthContext';
 import SocialAuth from '../../shared/SocialAuth';
 import { useLocation, useNavigate } from 'react-router-dom';
+<<<<<<< HEAD
 import axios from 'axios';
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
 
 const SignIn = () => {
 
@@ -24,9 +27,13 @@ const SignIn = () => {
 
             signInUser(email,password)
             .then(result=>{
+<<<<<<< HEAD
                 console.log("sign in",result.user.email)
 
 
+=======
+                console.log("sign in",result.user)
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
                 navigate(from)
                 
             })

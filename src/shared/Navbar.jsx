@@ -18,8 +18,12 @@ const Navbar = () => {
 
   const links = (
     <>
+<<<<<<< HEAD
         <li><NavLink to='/'>Home</NavLink></li> 
         <li><NavLink to='/jobs'>All Job</NavLink></li> 
+=======
+        <li><NavLink to='/'>Home</NavLink></li>
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
         <li><NavLink to='/myApplications'>My Job Application</NavLink></li>
         <li><NavLink to='/myPostedJob'>My Posted Job</NavLink></li>
         <li><NavLink to='/addJob'>Add Job</NavLink></li>

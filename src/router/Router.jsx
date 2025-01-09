@@ -10,7 +10,10 @@ import MyApplication from "../pages/myApplication/myApplication";
 import AddJob from "../pages/AddJob/AddJob";
 import MyPostedJobs from "../pages/MyPostedJobs/MyPostedJobs";
 import ViewApplication from "../pages/ViewApplication/ViewApplication";
+<<<<<<< HEAD
 import AllJobs from "../pages/AllJobs";
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
 
 
 
@@ -56,10 +59,13 @@ const router = createBrowserRouter([
             {
                 path:'/myPostedJob',
                 element:<MyPostedJobs></MyPostedJobs>
+<<<<<<< HEAD
             },
             {
                 path:'/jobs',
                 element:<AllJobs></AllJobs>
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
             }
         ]
     }

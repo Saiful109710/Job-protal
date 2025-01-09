@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.7.9",
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
     "firebase": "^11.1.0",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",

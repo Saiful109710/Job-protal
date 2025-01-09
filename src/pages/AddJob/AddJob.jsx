@@ -15,7 +15,11 @@ const AddJob = () => {
 
         const {min,max,currency,...newJob} = initialData
         console.log(newJob)
+<<<<<<< HEAD
         newJob.salaryRange = {min:parseInt(min),max:parseInt(max),currency}
+=======
+        newJob.salaryRange = {min,max,currency}
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
         newJob.requirements = newJob.requirements.split('\n')
         newJob.responsibilities = newJob.responsibilities.split('\n')
         console.log(newJob)
@@ -104,7 +108,11 @@ const AddJob = () => {
               <span className="label-text">Min</span>
             </label>
             <input
+<<<<<<< HEAD
               type="number"
+=======
+              type="text"
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
               name="min"
               placeholder="min"
               className="input input-bordered"
@@ -116,7 +124,11 @@ const AddJob = () => {
               <span className="label-text">Max</span>
             </label>
             <input
+<<<<<<< HEAD
               type="number"
+=======
+              type="text"
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
               placeholder="max"
               name="max"
               className="input input-bordered"
@@ -195,7 +207,10 @@ const AddJob = () => {
             <span className="label-text">HR Email</span>
           </label>
           <input
+<<<<<<< HEAD
           readOnly
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
             type="text"
             name="hr_email"
             defaultValue={user?.email}

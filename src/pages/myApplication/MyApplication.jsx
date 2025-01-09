@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../hooks/useAuth'
 import Swal from 'sweetalert2'
+<<<<<<< HEAD
 import axios from 'axios'
 import useAxiosSecure from '../../hooks/useAxiosSecure'
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
 
 const MyApplication = () => {
 
     const {user,loading,setLoading} = useAuth()
     
     const [jobs,setJobs] = useState([])
+<<<<<<< HEAD
     const axiosSecure = useAxiosSecure()
+=======
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
     
 
     useEffect(()=>{
         
+<<<<<<< HEAD
         // fetch(`http://localhost:7000/job-application?email=${user.email}`)
         // .then(res=>res.json())
         // .then(data=>{
@@ -29,6 +36,14 @@ const MyApplication = () => {
       axiosSecure.get(`/job-application?email=${user.email}`)
       .then(res=>setJobs(res.data))
 
+=======
+        fetch(`http://localhost:7000/job-application?email=${user.email}`)
+        .then(res=>res.json())
+        .then(data=>{
+            setJobs(data)
+            
+        })
+>>>>>>> 96423754fb3413c255a20edb6005d9b1c28efb5a
     },[user.email])
 
 
